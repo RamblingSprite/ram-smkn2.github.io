@@ -1,0 +1,313 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+/* navbar */
+.navbar-brand{
+    font-family: viga;
+}
+
+nav{
+    box-shadow: 8px 5px 50px rgba(0, 0, 0, 0.205);
+}
+
+/* utilitas */
+.tombol{
+    border-radius: 75px;
+}
+/* loader */
+.loader-wrapper{
+    width: 60px;
+    height: 60px;
+}
+
+.loader{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 10px solid rgb(39, 68, 134);
+    border-top-color: rgb(131, 24, 202);
+    border-bottom-color: rgb(73, 21, 156);
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+}
+
+.loader-inner{
+    border-top-color: rgb(13, 87, 172);
+    border-bottom-color: rgb(41, 17, 128);
+    animation-duration: 2.5s;
+}
+
+@keyframes rotate {
+    0%{
+        transform: scale(1) rotate(360deg);
+    }
+    50%{
+        transform: scale(.8) rotate(-360deg);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+a.btn.btn-danger.tombol.jumb {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+/* desk ver navbar */
+@media (min-width: 992px) {
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 3px;
+        margin-bottom: -9px;
+        color: lightblue;
+        height: 0.2px;
+    }
+ }
+
+ /* jumbotron */
+ h1.display-4.d-flex.justify-content-center.judul1 {
+    margin-top: 40px;
+    font-size: x-large;
+}
+
+.carousel-inner{
+    box-shadow: 5px 1px 10px black;
+    margin-top: 60px;
+}
+
+/* .jumbotron, .jumbotron-fluid{
+    background-image: url(../assets/img\ smkn\ 2\ bandung.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 750px;
+}
+
+.container1, .ke1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 255, .7);
+} */
+
+.carousel.slide{
+    width: 65%;
+}
+
+.container12{
+    text-align: center;
+}
+
+p.lead{
+    font-size: 15px;
+    color: gray;
+}
+
+@media (min-width: 992px) { 
+    h1.display-4.d-flex.justify-content-center.judul1 {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    p.lead{
+        font-size: 25px;
+    }
+
+    /* .jumbotron, .jumbotron-fluid{
+        background-image: url(../assets/img\ smkn\ 2\ bandung.jpg);
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 875px;
+    }
+    
+    .container1, .ke1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 255, .7);
+    } */
+}
+
+/* card1 */
+.row.w-100{
+    justify-content: center;
+    padding: 15px;
+}
+
+.card-body h5{
+    font-family: Arial;
+    text-shadow: 1px 1px 1px gray;
+    font-weight: bolder;
+}
+
+.card-body p{
+    font-weight: 700;
+    font-family: arial;
+    color: gray;
+}
+
+/* login page */
+/* form */
+.form-1{
+    width: 350px;
+    margin: auto;
+    margin-top: 80px;
+    border: solid 2px black;
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0.596);
+}
+
+/* about page */
+/*profile */
+/* .container.smk-profile{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 2fr;
+    gap: 20px;
+}
+
+
+.container.smk-profile .profile-2{
+    font-size: medium;
+}
+
+@media (min-width: 768px) { 
+    .container.smk-profile{
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: 500px 620px;
+        gap: 20px;
+    }
+} */
+
+.col-sm-3 img{
+    width: 350px;
+}
+
+.row.profile-1{
+    gap: 85px;
+    margin-top: 30px;
+}
+
+/* signup form */
+.signup-container form {
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* footer */
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.footer{
+    background-color: #040a18;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+@media (max-height:800px){
+    footer{
+        position: static;
+    }
+}
+
+.footer .footer-left{
+    width: 30%;
+}
+
+.footer .footer-copyright{
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;   
+    padding-top: 10%;
+}
+
+.footer .footer-center{
+    width: 35%;
+}
+
+.footer .footer-center i{
+    background-color:#33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;   
+}
+
+.footer .footer-center i.fa-envelope{
+    line-height: 38px;
+
+}
+
+.footer .footer-center p{
+    display:  inline-block;
+    color: #ffff;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.footer .footer-center p span{
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a{
+    color: rgb(22, 255, 177);
+    text-decoration: none;
+}
+
+/* aboutpage */
+.col-sm-8 h4{
+    text-decoration: underline;
+}
+
+/* jurusan page */
+.card.card-1{
+    width: 450px;
+}
